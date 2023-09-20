@@ -73,7 +73,7 @@ Clone the repository and catkin_make:
 **A**. Please make sure the Lidar has 'time'
 
 ## 4. Rosbag Example
-
+Mid-360 testdata can be downloaded from [Baidu Pan(password:a6u3)](https://pan.baidu.com/s/1Jg0lOT_FQt-jE0o4d0pOlg)
 
 ## Related Works
 1. [ct_icp](https://github.com/jedeschaud/ct_icp):  Continuous-Time LiDAR Odometry .
