@@ -6,7 +6,7 @@ CTLO: Continuous-Time LiDAR Odometry
 - [Video-Bilibili](https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3)
   
 <div align="center">
-    <img src="./point-lio.gif" width=80% />
+    <img src="doc/point-lio.gif" width=80% />
 </div>
 
 
@@ -20,14 +20,14 @@ CTLO: Continuous-Time LiDAR Odometry
 
 <div align="center">
     <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
-    <img src="./m-stair.gif" width=80% />
+    <img src="doc/m-stair.gif" width=60% />
 </div>
 
 #### AVIA, long corridor
 
 <div align="center">
     <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
-    <img src="./vm++.gif" width=80% />
+    <img src="doc/vm++.gif" width=60% />
 </div>
 
 
