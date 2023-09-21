@@ -1,7 +1,7 @@
 # ctlo
 CTLO: Continuous-Time LiDAR Odometry
 
-**CTLO** (Continuous-Time LiDAR Odometry) is an accurate and robust LiDAR odometry (LIO). 
+**CTLO** (Continuous-Time LiDAR Odometry) is an accurate and robust LiDAR odometry (LO). 
 
 - [Video-Bilibili](https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3)
   
@@ -30,7 +30,19 @@ CTLO: Continuous-Time LiDAR Odometry
     <img src="doc/vm++.gif" width=60% />
 </div>
 
+#### velodyne32, urbanNavDataset
 
+<div align="center">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <img src="doc/urbanNavDataset.gif" width=60% />
+</div>
+
+#### MID-360
+
+<div align="center">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <img src="doc/gmach.gif" width=60% />
+</div>
 
 
 ## 1. Prerequisites
