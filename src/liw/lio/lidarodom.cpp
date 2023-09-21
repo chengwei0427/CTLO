@@ -384,46 +384,33 @@ namespace zjloc
                {
                     if (options_.beta_location_consistency > 0.) //   location consistency
                     {
-#ifdef USE_ANALYTICAL_DERIVATE
-                         CT_ICP::LocationConsistencyFactor *cost_location_consistency =
-                             new CT_ICP::LocationConsistencyFactor(previous_translation, sqrt(surf_num * options_.beta_location_consistency * laser_point_cov));
-#else
                          auto *cost_location_consistency =
                              CT_ICP::LocationConsistencyFunctor::Create(previous_translation, sqrt(surf_num * options_.beta_location_consistency));
-#endif
+
                          problem.AddResidualBlock(cost_location_consistency, nullptr, &begin_t.x());
                     }
 
                     if (options_.beta_orientation_consistency > 0.) // orientation consistency
                     {
-#ifdef USE_ANALYTICAL_DERIVATE
-                         CT_ICP::RotationConsistencyFactor *cost_rotation_consistency =
-                             new CT_ICP::RotationConsistencyFactor(previous_orientation, sqrt(surf_num * options_.beta_orientation_consistency * laser_point_cov));
-#else
                          auto *cost_rotation_consistency =
                              CT_ICP::OrientationConsistencyFunctor::Create(previous_orientation, sqrt(surf_num * options_.beta_orientation_consistency));
-#endif
+
                          problem.AddResidualBlock(cost_rotation_consistency, nullptr, &begin_quat.x());
                     }
 
                     if (options_.beta_small_velocity > 0.) //     small velocity
                     {
-#ifdef USE_ANALYTICAL_DERIVATE
-                         CT_ICP::SmallVelocityFactor *cost_small_velocity =
-                             new CT_ICP::SmallVelocityFactor(sqrt(surf_num * options_.beta_small_velocity * laser_point_cov));
-#else
                          auto *cost_small_velocity =
                              CT_ICP::SmallVelocityFunctor::Create(sqrt(surf_num * options_.beta_small_velocity));
-#endif
                          problem.AddResidualBlock(cost_small_velocity, nullptr, &begin_t.x(), &end_t.x());
                     }
 
-                    // if (options_.beta_constant_velocity > 0.) //  const velocity
-                    // {
-                    //      CT_ICP::VelocityConsistencyFactor2 *cost_velocity_consistency =
-                    //          new CT_ICP::VelocityConsistencyFactor2(previous_velocity, sqrt(surf_num * options_.beta_constant_velocity * laser_point_cov));
-                    //      problem.AddResidualBlock(cost_velocity_consistency, nullptr, PR_begin, PR_end);
-                    // }
+                    if (options_.beta_constant_velocity > 0.) //  const velocity
+                    {
+                         auto *cost_velocity_consistency =
+                             CT_ICP::ConstantVelocityFunctor::Create(previous_velocity, sqrt(surf_num * options_.beta_constant_velocity * laser_point_cov));
+                         problem.AddResidualBlock(cost_velocity_consistency, nullptr, &begin_t.x(), &end_t.x());
+                    }
                }
 
                if (surf_num < options_.min_num_residuals)

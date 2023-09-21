@@ -235,7 +235,7 @@ namespace CT_ICP
           {
                if (jacobians[0])
                {
-                    Eigen::Map<Eigen::Matrix<double, 3, 6, Eigen::RowMajor>> jacobian_velocity_bias_begin(jacobians[0]);
+                    Eigen::Map<Eigen::Matrix<double, 3, 3, Eigen::RowMajor>> jacobian_velocity_bias_begin(jacobians[0]);
                     jacobian_velocity_bias_begin.setZero();
 
                     jacobian_velocity_bias_begin(0, 0) = -beta;
@@ -244,7 +244,7 @@ namespace CT_ICP
                }
                if (jacobians[1])
                {
-                    Eigen::Map<Eigen::Matrix<double, 3, 6, Eigen::RowMajor>> jacobian_velocity_bias_end(jacobians[1]);
+                    Eigen::Map<Eigen::Matrix<double, 3, 3, Eigen::RowMajor>> jacobian_velocity_bias_end(jacobians[1]);
                     jacobian_velocity_bias_end.setZero();
 
                     jacobian_velocity_bias_end(0, 0) = beta;

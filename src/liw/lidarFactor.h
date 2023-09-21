@@ -345,7 +345,7 @@ namespace CT_ICP
           double beta;
      };
 
-     class VelocityConsistencyFactor : public ceres::SizedCostFunction<3, 6, 6>
+     class VelocityConsistencyFactor : public ceres::SizedCostFunction<3, 3, 3>
      {
 
      public:

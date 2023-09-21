@@ -45,7 +45,7 @@ odometry:
   motion_compensation: CONTINUOUS #NONE, CONSTANT_VELOCITY, ITERATIVE, CONTINUOUS
   beta_location_consistency: 1.0
   beta_orientation_consistency: 1.0
-  beta_constant_velocity: 0.0
+  beta_constant_velocity: 1.0
   beta_small_velocity: 0.0
 
   thres_translation_norm: 0.01            # m
