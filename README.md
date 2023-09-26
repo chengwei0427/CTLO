@@ -3,10 +3,11 @@ CTLO: Continuous-Time LiDAR Odometry
 
 **CTLO** (Continuous-Time LiDAR Odometry) is an accurate and robust LiDAR odometry (LO). 
 
-- [Video-Bilibili](https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3)
+- [Video-Bilibili](https://www.bilibili.com/video/BV1u841117UR/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3)
   
 <div align="center">
-    <img src="doc/point-lio.gif" width=80% />
+    <a href="https://www.bilibili.com/video/BV1u841117UR/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <img src="doc/point-lio2.gif" width=80% />
 </div>
 
 
@@ -16,31 +17,38 @@ CTLO: Continuous-Time LiDAR Odometry
 
 ### Some test results are show below:
 
+### LIVOX-horizon, 2-layer, degeneration
+
+<div align="center">
+    <a href="https://www.bilibili.com/video/BV1u841117UR?p=2&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <img src="doc/ZJU-H1.gif" width=60% />
+</div>
+
 #### MID-360, multi-layer 
 
 <div align="center">
-    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z?p=3&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
     <img src="doc/m-stair.gif" width=60% />
 </div>
 
 #### AVIA, long corridor
 
 <div align="center">
-    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z?p=2&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
     <img src="doc/vm++.gif" width=60% />
 </div>
 
 #### velodyne32, urbanNavDataset
 
 <div align="center">
-    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z?p=5&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
     <img src="doc/urbanNavDataset.gif" width=60% />
 </div>
 
 #### MID-360
 
 <div align="center">
-    <a href="https://www.bilibili.com/video/BV1gu411w77z/?spm_id_from=333.999.0.0&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
+    <a href="https://www.bilibili.com/video/BV1gu411w77z?p=4&vd_source=438f630fe29bd5049b24c7f05b1bcaa3" target="_blank">
     <img src="doc/gmach.gif" width=60% />
 </div>
 
